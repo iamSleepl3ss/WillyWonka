@@ -1,0 +1,209 @@
+body {
+	background-image: url("gfx/background1.jpg");
+	background-size: 100%;
+	background-repeat: repeat-x;
+	transition: all 2s ease;
+}
+
+#bgoff {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: auto;
+	left: 0px;
+	top: 0px;
+	transition: opacity 3s ease;
+	opacity: 0;
+	z-index: -999;
+}
+
+#bgoff2 {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: auto;
+	left: 0px;
+	top: 0px;
+	transition: opacity 3s ease;
+	opacity: 0;
+	z-index: -999;
+}
+
+.bodybg {
+	display: block;
+	position: absolute;
+	width: 728px;
+	height: 748px;
+	transition: opacity 0.2s ease;
+	opacity: 0;
+	z-index: -1;
+}
+
+#middel {
+	position: absolute;
+	left: 50%;
+	top: 45%;
+	margin-left: -374px;
+    margin-top: -408px;
+}
+
+.iconlink{
+	left: 10px;
+	margin: 0px 3px 0px;
+	display: inline-block;
+	width: 51px;
+	height: 51px;
+}
+
+#link_main {
+	position: relative;
+	top: -53px;
+	left: 240px;
+
+}
+
+#link_yt {
+	position: relative;
+	top: -66px;
+
+	width: 51px;
+	background-image: url("gfx/icon_youtube.png");
+}
+
+#link_yt:hover {
+
+	width: 51px;
+	background-image: url("gfx/icon_youtube.png");
+	background-position: 51px 0px;
+}
+
+#link_fb {
+	position: relative;
+	top: -66px;
+
+	width: 51px;
+	background-image: url("gfx/icon_fb.png");
+}
+#link_fb:hover {
+	width: 51px;
+	background-image: url("gfx/icon_fb.png");
+	background-position: 51px 0px;
+}
+
+#link_twit {
+	position: relative;
+	top: -66px;
+	width: 51px;
+	background-image: url("gfx/icon_twitter.png");
+}
+#link_twit:hover {
+	width: 51px;
+	background-image: url("gfx/icon_twitter.png");
+	background-position: 51px 0px;
+}
+
+#link_home {
+	width: 134px;
+	height: 134px;
+	background-image: url("gfx/nav_home3.png");
+}
+
+#link_home:hover {
+	width: 134px;
+	height: 134px;
+	background-image: url("gfx/nav_home3.png");
+	background-position: 0px 134px;
+}
+
+#link_proj{
+	width: 134px;
+	height: 134px;
+	background-image: url("gfx/nav_projects.png");
+}
+
+#link_proj:hover {
+	width: 134px;
+	height: 134px;
+	background-image: url("gfx/nav_projects.png");
+	background-position: 0px 134px;
+}
+
+#link_info{
+	width: 134px;
+	height: 134px;
+	background-image: url("gfx/nav_info.png");
+}
+
+#link_info:hover {
+	width: 134px;
+	height: 134px;
+	background-image: url("gfx/nav_info.png");
+	background-position: 0px 134px;
+}
+
+
+#middle {
+	width: 728px;
+	height: 748px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1 {
+	margin: 50px 0px 20px;
+	font-family: 'Roboto Slab', serif;
+	font-size: 54px;
+	font-weight: normal;
+	color: #7e654d;
+}
+
+p {
+	margin: 15px 60px 30px;
+	font-family: 'Roboto Slab', serif;
+
+	font-size: 15px;
+	color: #706d65;
+}
+
+.name {
+	color: #000000;
+}
+
+#logo {
+	text-align: center;
+	position: relative;
+	top: 70px;
+	left: 10px;
+}
+
+#info {
+	max-width: 728px;
+	text-align: center;
+	position: absolute;
+}
+
+#below {
+	text-align: center;
+	margin: 22px 0px 0px;
+}
+
+.botlink_home {
+	margin: 0px 5px 0px;
+	display: inline-block;
+	width: 105px;
+	height: 56px;
+}
+
+.botlink_proj {
+	margin: 0px 5px 0px;
+	display: inline-block;
+	width: 166px;
+	height: 55px;
+}
+
+.botlink_info {
+	margin: 0px 5px 0px;
+	display: inline-block;
+	width: 75px;
+	height: 59px;
+}
