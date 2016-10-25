@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>timer</title>
+    <script>
+    window.onload = countTimer;
+
+    var timerVar = setInterval(countTimer, 1000);
+    var totalSeconds = 0;
+ var ulykke = Math.floor((Math.random() * 9) + 3)
+        console.log(ulykke)
+    function countTimer() {
+        ++totalSeconds;
+        var hour = Math.floor(totalSeconds / 3600);
+        var minute = Math.floor((totalSeconds - hour * 3600) / 60);
+        var seconds = totalSeconds - (hour * 3600 + minute * 60);
+       
+        if(seconds === ulykke){
+        	totalSeconds=0
+        }
+         document.getElementById("timer").innerHTML = hour + ":" + minute + ":" + seconds;
+
+    }
+
+    </script>
+</head>
+
+<body>
+    <div id="timer"></div>
+</body>
+
+</html>
