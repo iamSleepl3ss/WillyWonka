@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Test side</title>
+		<meta content="text/html" charset=utf-8>
+		<meta name="description" content="Oblig 3, test side for en annen metode.">
+		<meta name="keywords" content="Narin, Vadim, Test side, Aleksander">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<!--Skifter bakgrunn ved sidebytte-->
+		<script src="js/transitions.js"></script>
+		<img id="bgoff" src="gfx/background2.jpg">
+		<img id="bgoff2" src="gfx/background3.jpg">
+
+		<!-- Hovedkropp og midt arks element -->
+		<div id="middle">
+			<div id="middle">
+			<img class="bodybg" id="body1" style="opacity: 1;" src="gfx/body.png">
+			<img class="bodybg" id="body2" src="gfx/body2.png">
+
+
+			<div id="logo" style="display: none;">
+				<h3>Finn Mr.Wonka!</h3>
+				<p>Adresse: E Bay Rd, Torrance, ON P0C 1M0, Canada</p>
+				<p>Telefon: +195-424-8325</p>
+				<p>Åpningstider: "Oompa Loompas never sleep".</p>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249.20397113235123!2d-79.56070050950522!3d45.03667620990868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4d2af34d76997bdb%3A0x61e925f3bbb00f8f!2sWilly+Wonka&#39;s+Chocolate+Factory!5e0!3m2!1sno!2sno!4v1477373367540" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+
+			<!-- Boks for info side -->
+			<div id="info" style="display: none;">
+				<h1>Info</h1>
+				<img src="gfx/Logo2.png" alt="WonkaHat"	height="215px" width="200px">
+				<p align="left">
+	Willy Wonka er en fiktiv figur i Roald Dahls fortelling Charlie og sjokoladefabrikken.
+		Willy Wonka er verdens beste sjokoladefabrikant og lever isolert fra omverden i sin gigantiske fabrikk kalt Wonkaland.
+			Willy Wonka er en mann uten barndom; faren var den strenge og prestisjetunge tannlegen Dr.Wonka,
+				og Willy brøt all kontakt med han i en alder av 11 år.
+				</p>
+				<img id="willyb" src="gfx/Load2.gif" width="180" height="230">
+			</div>
+
+
+		<!-- Her kommer hoveddelen av oppgaven... -->
+
+		<div id="projects" style="display: none;">
+<br>
+<h1>&nbsp;&nbsp;&nbsp;På fabrikken!</h1>
+<!-- Jssor Slider begynner -->
+	<div id="slider1_container" style="position: relative; width: 640px;
+			height: 360px;">
+
+			<!-- Innhold av slider -->
+			<div u="slides" style="cursor: move; position: relative; left: 44px; top: 0px; width: 640px; height: 360px;
+					overflow: hidden;">
+		<div><img u=image src="gfx/pic1.jpg" /></div>
+		<div><img u=image src="gfx/pic2.jpg" /></div>
+		<div><img u=image src="gfx/pic3.jpg" /></div>
+		<div><img u=image src="gfx/pic4.jpg" /></div>
+		<div><img u=image src="gfx/pic5.jpg" /></div>
+		<div><img u=image src="gfx/pic6.jpg" /></div>
+		<div><img u=image src="gfx/pic7.jpg" /></div>
+		<div><img u=image src="gfx/pic8.jpg" /></div>
+			</div>
+	</div>
+	<p> Noen regler for å befinne seg på fabrikken: Ikke fall i sjokolade dammen. Ikke prøv prototyp godteri. Ikke prøv å leke med ekornene, og IKKE bruk Ianuae Magicae systemet som et leketøy.</p>
+	<h3> Tid siden siste uhell: </h3> <p id="print"></p>
+		</div>
+				</div>
+		<div id="below">
+
+			<a class="botlink_home" id="link_home" href="#" onclick="toHome();return false;" alt="Home"></a>
+			<a class="botlink_proj" id="link_proj" href="#" onclick="toProjects();return false;" alt="Projects"></a>
+			<a class="botlink_info" id="link_info" href="#" onclick="toInfo();return false;" alt="Info"></a>
+
+
+			<a class="iconlink" id="link_yt" href="https://www.youtube.com/watch?v=cEVilNDXd0A" alt="YouTube channel"></a>
+			<a class="iconlink" id="link_fb" href="https://www.facebook.com/CasuallyExplained/?fref=ts" alt="Facebook"></a>
+			<a class="iconlink" id="link_twit" href="https://twitter.com/KEEMSTAR" alt="Twitter"></a>
+			</BR>
+
+
+		<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="js/jssor.js"></script>
+		<script type="text/javascript" src="js/jssor.slider.js"></script>
+
+		</div>
+		<script>
+        jQuery(document).ready(function ($) {
+            //Reference http://www.jssor.com/development/slider-with-slideshow-jquery.html
+            //Reference http://www.jssor.com/development/tool-slideshow-transition-viewer.html
+						//https://github.com/jssor/slider
+
+            var _SlideshowTransitions = [
+            //Fade
+            { $Duration: 2200, $Opacity: 2 }
+            ];
+
+            var options = {
+                $SlideDuration: 1500,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+                $DragOrientation: 3,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+                $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+                $AutoPlayInterval: 2500,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+                $SlideshowOptions: {                                //[Optional] Options to specify and enable slideshow or not
+                    $Class: $JssorSlideshowRunner$,                 //[Required] Class to create instance of slideshow
+                    $Transitions: _SlideshowTransitions,            //[Required] An array of slideshow transitions to play slideshow
+                    $TransitionsOrder: 1,                           //[Optional] The way to choose transition to play slide, 1 Sequence, 0 Random
+                    $ShowLink: true                                    //[Optional] Whether to bring slide link on top of the slider when slideshow is running, default value is false
+                }
+            };
+
+            var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+
+        });
+    </script>
+	</body>
+
+</div>
+
+</html>
