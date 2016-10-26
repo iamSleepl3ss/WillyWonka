@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+   <head>
+      <title>A childs Diary - Willy Wonka</title>
+      <meta charset=utf-8>
+      <meta name="description" content="Willy Wonkas dagbok fanside">
+      <meta name="keywords" content="Narin, Vadim, Test side, Aleksander">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+   </head>
+   <body>
+
+      <!--Skifter bakgrunn ved sidebytte-->
+      <script src="js/transitions.js"></script>
+      <img id="bgoff" src="gfx/background2.jpg" alt="Bakgrunns bilde nummber 2. Ignorer.">
+      <img id="bgoff2" src="gfx/background3.jpg" alt="Bakgrunns bilde nummber 3. Ignorer.">
+
+      <!-- Hovedkropp og midt arks element -->
+      <div id="middle">
+         <img class="bodybg" id="body1" style="opacity: 1;" src="gfx/body.png" alt="Bakgrunns kropp nummber 2. Ignorer.">
+         <img class="bodybg" id="body2" src="gfx/body2.png" alt="Bakgrunns kropp nummber 2. Ignorer.">
+
+         <!-- Boks for adresse side -->
+         <div id="logo" style="display: none;">
+            <article>
+               <header>
+                  <h2>Finn Mr.Wonka!</h2>
+               </header>
+               <p><b>Adresse:</b><br> E Bay Rd, Torrance, ON P0C 1M0, Canada <br>
+                  <b>Telefon:</b><br> +195-424-8325 <br>
+                  <b>Åpningstider:</b><br> 10:00-22:00
+               </p>
+            </article>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249.20397113235123!2d-79.56070050950522!3d45.03667620990868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4d2af34d76997bdb%3A0x61e925f3bbb00f8f!2sWilly+Wonka's+Chocolate+Factory!5e0!3m2!1sno!2sno!4v1477373367540" style="border:0" allowfullscreen></iframe>
+         </div>
+
+         <!-- Boks for info side -->
+         <div id="info" style="display: none;">
+            <main>
+               <article>
+                  <header>
+                     <h1>Info</h1>
+                  </header>
+                  <img src="gfx/Logo2.png" alt="WonkaHat"	height="215" width="200">
+                  <p>
+                     Willy Wonka er en fiktiv figur i Roald Dahls fortelling Charlie og sjokolade fabrikken.
+                     Willy Wonka er verdens beste sjokolade fabrikant og lever isolert fra omverden i sin gigantiske fabrikk kalt Wonkaland.
+                     Willy Wonka er en mann uten barndom; faren var den strenge og prestisjetunge tannlegen Dr.Wonka,
+                     og Willy brøt all kontakt med han i en alder av 11 år.
+                  </p>
+               </article>
+            </main>
+            <img id="willyb" src="gfx/Load2.gif" width="180" height="230" alt="Barnetegning av Willy Wonka.">
+         </div>
+
+         <!-- Her kommer den vanskelige delen av oppgaven... -->
+         <!-- boks for "på fabrikken" info, mye av jobb til slider ettersom jquery ikke er lært fra før...Så jeg må lære meg det -->
+         <div id="projects" style="display: none;">
+            <br>
+            <article>
+               <header>
+                  <h2>På fabrikken!</h2>
+               </header>
+               <!-- Jssor Slider begynner -->
+               <div id="slider1_container" style="position: relative; width: 640px; height: 360px; float:left">
+                  <!-- Innhold av slider -->
+                  <div u="slides">
+                     <div><img src="gfx/pic3.jpg" u="image" alt="Bilde av Willy Wonka foran sjokolade damen."/></div>
+                     <div><img src="gfx/pic1.jpg" u="image" alt="Bilde av broa i Willy Wonkas sjokolade hage."/></div>
+                     <div><img src="gfx/pic2.jpg" u="image" alt="Bilde av broa i Willy Wonkas sjokolade hage med ham oppå."/></div>
+                     <div><img src="gfx/pic4.jpg" u="image" alt="Easter egg bildet."/></div>
+                     <div><img src="gfx/pic5.jpg" u="image" alt="Kunst av alle fem ungene fra filmen: Charlie og Sjokolade fabrikken."/></div>
+                     <div><img src="gfx/pic6.jpg" u="image" alt="Kunst av Willy Wonkas sjokolade hage."/></div>
+                     <div><img src="gfx/pic7.jpg" u="image" alt="Gutt som ser på oss da han spiser sjokolade."/></div>
+                     <div><img src="gfx/pic8.jpg" u="image" alt="Dansene Oompa Loompar (små mennesker)."/></div>
+                  </div>
+               </div>
+               <img id="error" src="gfx/placeholder.png" alt="Rampette tegning av en Oompa Loompa som har ødelagt Jssor koden.">
+               <p> Noen regler for å befinne seg på fabrikken: Ikke fall i sjokolade dammen. Ikke prøv prototyp godteri. Ikke prøv å leke med ekornene, og IKKE bruk Ianuae Magicae systemet som et leketøy.</p>
+               <h3> Tid siden siste uhell: </h3>
+               <p id="print"></p>
+            </article>
+         </div>
+      </div>
+
+      <!-- ikoner og hvor den tar deg -->
+      <div id="below">
+         <nav>
+            <a class="botlink_home" id="link_home" href="#" onclick="toHome();return false;"></a>
+            <a class="botlink_proj" id="link_proj" href="#" onclick="toProjects();return false;"></a>
+            <a class="botlink_info" id="link_info" href="#" onclick="toInfo();return false;"></a>
+            <aside>
+               <a class="iconlink" id="link_yt" href="https://www.youtube.com/watch?v=eToCsR8u2FA"></a>
+               <a class="iconlink" id="link_fb" href="https://www.facebook.com/CasuallyExplained/?fref=ts"></a>
+               <a class="iconlink" id="link_twit" href="https://twitter.com/KEEMSTAR"></a>
+               <a class="iconlink" id="link_rss" href="rss.xml"></a>
+               <br>
+            </aside>
+         </nav>
+      </div>
+
+					<!-- script henting fra fil, og nettside, kopiert inn fra .js fil innhentet fra jssor siden -->
+					<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+					<script type="text/javascript" src="js/jssor.js"></script>
+					<script type="text/javascript" src="js/jssor.slider.js"></script>
+
+      <!-- Del av slider script, inkludert parametere og referanser -->
+      <script>
+         jQuery(document).ready(function ($) {
+             //Referanse http://www.jssor.com/development/slider-with-slideshow-jquery.html
+             //Referanse http://www.jssor.com/development/tool-slideshow-transition-viewer.html
+         		//https://github.com/jssor/slider
+         		//https://www.youtube.com/watch?v=Xd2r4o1lbHE
+
+
+
+             var _SlideshowTransitions = [
+             //Fade
+             { $Duration: 2200, $Opacity: 2 }
+             ];
+
+             var options = {
+                 $SlideDuration: 1500,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+                 $DragOrientation: 3,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+                 $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+                 $AutoPlayInterval: 2500,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+                 $SlideshowOptions: {                                //[Optional] Options to specify and enable slideshow or not
+                     $Class: $JssorSlideshowRunner$,                 //[Required] Class to create instance of slideshow
+                     $Transitions: _SlideshowTransitions,            //[Required] An array of slideshow transitions to play slideshow
+                     $TransitionsOrder: 1,                           //[Optional] The way to choose transition to play slide, 1 Sequence, 0 Random
+                     $ShowLink: true                                    //[Optional] Whether to bring slide link on top of the slider when slideshow is running, default value is false
+                 }
+             };
+
+             var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+         //repsonsive kode for slider begynner...Den er altså responsiv hvis du går i CSS og tar vekk display: none; ved "#slider1_container" i "@media screen and (max-width: 745px)"...
+				 //grunnet display:none er fordi den skalerte ved kanten av scroll vertkøyet, noe som gjør at den havner under. Jeg likte ikke funskjonaliteten og designet på dette, så jeg erstattet dette med en vits.
+         function ScaleSlider() {
+         	var bodyWidth = document.body.clientWidth;
+         	if (bodyWidth)
+         			jssor_slider1.$ScaleWidth(Math.min(bodyWidth, 640));
+         	else
+         			window.setTimeout(ScaleSlider, 30);
+         }
+         ScaleSlider();
+
+         $(window).bind("load", ScaleSlider);
+         $(window).bind("resize", ScaleSlider);
+         $(window).bind("orientationchange", ScaleSlider);
+         //responsiv slutt
+
+         });
+      </script>
+   </body>
+</html>

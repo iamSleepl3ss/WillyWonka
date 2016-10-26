@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>charlie sjokoladefabrikken</title>
+  <link>http://www.it-stud.hiof.no/~aleksasi/webutv/3/index.html</link>
+  <description>Et lite dagboks-nettside om Willy Wonka</description>
+  <language>no-nb</language>
+  <copyright>©are you for real?</copyright>
+  <item>
+    <title>Willy Dagbok</title>
+    <category>Nettside</category>
+    <author>Vladimir Putin</author>
+    <link>http://www.it-stud.hiof.no/~aleksasi/webutv/3/index.html</link>
+  </item>
+</channel>
+</rss>
